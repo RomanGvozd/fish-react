@@ -1,0 +1,122 @@
+.background-modal {
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.47);
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .products-modal {
+        width: 552.19px;
+        height: auto;
+        padding: 20px; 
+        background: #FFFFFF;
+
+        .modal__header {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+
+            .header__title {
+                font-family: 'Roboto';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 21px;
+
+            }
+
+            .header__delete {
+                width: 25px;
+                height: 25px;
+                background: #566B7D;
+                border: none;
+                border-radius: 50%;
+                position: relative;
+
+                &::after {
+                    position: absolute;
+                    content: '';
+                    width: 15px;
+                    height: 1px;
+                    background-color: #FFFFFF;
+                    left: 5px;
+                    top: 12px;
+                    transform: rotate(45deg);
+
+                }
+
+                &::before {
+                    position: absolute;
+                    content: '';
+                    width: 15px;
+                    height: 1px;
+                    background-color: #FFFFFF;
+                    left: 5px;
+                    top: 12px;
+                    transform: rotate(-45deg);
+
+
+                }
+
+            }
+
+        }
+
+        .modal__content {
+            width: 100%;
+            height: 150px;
+            display: flex;
+            padding: 10px 0;
+
+            .content__imputs {
+                width: 55%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                padding-right: 10%;
+
+                .content__imput {
+                    border: none;
+                    border-bottom: 1px solid #45576B;
+                    padding: 2px;
+
+                    &:focus{
+                        outline: none;
+                    }
+
+                }
+                
+                .content__prise {
+                    border-bottom: 1px solid black;
+                }
+
+            }
+
+            .content__image {
+                width: 45%;
+                height: 100%;
+                background-image: url(./images/productsModalImages.png);
+                background-size: cover;
+
+            }
+
+        }
+
+        .modal__submit {
+            width: 107px;
+            height: 30px;
+            background: #566B7D;
+            border-radius: 3px;
+            border: none;
+            color: #FFFFFF;
+
+        }
+
+    }
+
+}

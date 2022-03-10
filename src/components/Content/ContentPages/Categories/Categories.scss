@@ -1,0 +1,42 @@
+.categories {
+
+    .categories-header {
+        padding: 15px 0;
+
+    }
+
+    .categories__content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: s;
+
+        .categories-card {
+            width: 31%;
+            height: 185px;
+            border: 1px solid black;
+            margin-bottom: 30px;
+            position: relative;
+            background-image: url(../Categories/images/categories-background.png);
+            background-size: cover;
+
+            &:first-child {
+                width: 56%;
+            }
+
+            &:nth-child(2) {
+                width: 40%;
+            }
+
+        }
+
+    }
+
+}
+
+@media all and (max-width: 768px){
+    .categories-card {
+        width: 100%;
+    }
+    
+}

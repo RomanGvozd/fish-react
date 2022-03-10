@@ -1,0 +1,90 @@
+.select-products-modal {
+    position: relative;
+
+    .select-products-modal__button {
+        cursor: pointer;
+        width: 100%;
+        height: auto;
+        background: #FFFFFF;
+        border-bottom: 1px solid #231F20;
+        box-sizing: border-box;
+        padding: 5px 8px;
+        position: relative;
+
+        &::after {
+            content: '';
+            position: absolute;
+            background-image: url(./sprites/SelectProductsButtonIcon.svg);
+            background-size: contain;
+            background-repeat: no-repeat;
+            right: 10px;
+            top: 5px;
+            width: 15px;
+            height: 15px;
+            transform: rotate(180deg);
+            transition: 0.3s;
+
+        }
+
+    }
+
+    .select-products-modal__button-active {
+        border: 1px solid black;
+        border-bottom: none;
+        position: relative;
+
+        &::after {
+            content: '';
+            position: absolute;
+            background-image: url(./sprites/SelectProductsButtonIcon.svg);
+            background-size: contain;
+            background-repeat: no-repeat;
+            right: 10px;
+            top: 10px;
+            width: 15px;
+            height: 15px;
+            transform: rotate(0deg);
+            transition: 0.3s;
+
+        }
+
+        &::before {
+            content: '';
+            position: absolute;
+            right: 3%;
+            bottom: 0;
+            width: 94%;
+            height: 1px;
+            background-color: #231F20;
+
+        }
+
+    }
+
+    .select-products-modal__content {
+        width: 100%;
+        height: auto;
+        background: #FFFFFF;
+        border: 1px solid black;
+        border-top: none;
+        box-sizing: border-box;
+        position: absolute;
+        left: 0;
+        top: 100%;
+        z-index: 10;
+
+        .content-modal__item {
+            cursor: pointer;
+            padding: 5px 8px;
+
+            &:hover {
+                background: rgba(196, 196, 196, 0.4);
+
+            }
+
+        }
+
+    }
+
+}
+

@@ -1,0 +1,25 @@
+.card__footer {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.49);
+
+    .card__title {
+        margin-left: 8px;
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: normal;
+        color: #FFFFFF;
+
+    }
+
+    .card__subtitle {
+        margin-left: 16px;
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: 300;
+        color: #FFFFFF;
+
+    }
+
+}
